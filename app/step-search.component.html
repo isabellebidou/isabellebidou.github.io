@@ -1,0 +1,10 @@
+<div id="search-component">
+  <h4>Step Search</h4>
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+  <div>
+    <div *ngFor="let step of steps | async"
+         (click)="gotoDetail(step)" class="search-result" >
+      {{step.name}}
+    </div>
+  </div>
+</div>
