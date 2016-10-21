@@ -1,4 +1,10 @@
-<h2>My Steps</h2>
+
+<div *ngIf="selectedStep">
+<h2>
+  {{selectedStep.name | uppercase}} dvd:{{selectedStep.dvd| uppercase}} {{selectedStep.location| uppercase}}
+</h2>
+
+</div>
 
   <ul class="steps">
     <li *ngFor="let step of steps"
@@ -9,9 +15,3 @@
 
     </li>
   </ul>
-  <div *ngIf="selectedStep">
-  <h2>
-    {{selectedStep.name | uppercase}} is my step
-  </h2>
-  <button (click)="gotoDetail()">View Details</button>
-</div>

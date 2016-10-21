@@ -28,6 +28,7 @@ export class StepsComponent implements OnInit {
 
   onSelect(step: Step): void {
     this.selectedStep = step;
+  //  this.gotoDetail();
   }
 
   gotoDetail(): void {

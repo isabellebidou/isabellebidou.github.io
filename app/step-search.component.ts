@@ -38,7 +38,9 @@ export class StepSearchComponent implements OnInit {
       });
   }
   gotoDetail(step: Step): void {
-    let link = ['/detail', step.name];
-    this.router.navigate(link);
+  //  let link = ['/detail', step.name];
+  //  this.router.navigate(link);
+
+
   }
 }

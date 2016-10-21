@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-
-    <step-search></step-search>
+<my-step-detail></my-step-detail>
+<step-search></step-search>
+<my-steps></my-steps>
     <nav>
 
       <a routerLink="/steps" routerLinkActive="active"> steps</a>
@@ -17,5 +18,5 @@ import { Component } from '@angular/core';
   styleUrls: ['steps.component.css'],
 })
 export class AppComponent {
-  title = 'which DVD';
+  title = 'which DVD?';
 }

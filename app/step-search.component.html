@@ -3,8 +3,8 @@
   <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
   <div>
     <div *ngFor="let step of steps | async"
-         (click)="gotoDetail(step)" class="search-result" >
-      {{step.name}}
+       (click)="gotoDetail(step)" class="search-result" >
+      {{step.name}}  dvd: {{step.dvd}}  {{step.location}}
     </div>
   </div>
 </div>

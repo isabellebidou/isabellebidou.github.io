@@ -9,7 +9,8 @@ import { Injectable } from '@angular/core';
 export class StepService {
 
 
-  private stepsUrl = 'app/steps';  // URL to web api
+//  private stepsUrl = 'https://api.myjson.com/bins/sn84';  // URL to web api
+ private stepsUrl = 'app/steps';
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) { }
