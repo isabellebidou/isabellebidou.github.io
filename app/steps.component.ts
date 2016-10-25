@@ -12,7 +12,7 @@ import { StepService } from './step.service';
 })
 export class StepsComponent implements OnInit {
   steps: Step[];
-  selectedStep: Step;
+  public selectedStep: Step;
 
   constructor(
     private router: Router,

@@ -2,13 +2,30 @@
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
-  width:70%;
+  width:80%;
   height: 20px;
   padding: 5px;
   background-color: white;
   cursor: pointer;
+  margin:auto;
+
+  width: 100% ;
+}
+
+#search-component{
+
+  margin:auto;
+
+  width: 80% ;
+
+
+}
+.clear-result{
+  width:18%;
+    height: 20px;
+    
 }
 #search-box{
-  width: 70% ;
+width:78%;
   height: 20px;
 }

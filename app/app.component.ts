@@ -8,11 +8,8 @@ import { Component } from '@angular/core';
 <my-step-detail></my-step-detail>
 <step-search></step-search>
 <my-steps></my-steps>
-    <nav>
 
-      <a routerLink="/steps" routerLinkActive="active"> steps</a>
-    </nav>
-    <router-outlet></router-outlet>
+
 
   `,
   styleUrls: ['steps.component.css'],

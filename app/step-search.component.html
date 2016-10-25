@@ -1,9 +1,20 @@
+
+
 <div id="search-component">
-  <h4>Step Search</h4>
+  <p>Write the name of the step</p>
+
+  <div *ngIf="selectedStep">
+  <h2 class="selectedStep">
+    {{selectedStep.name }} dvd:{{selectedStep.dvd}} {{selectedStep.location}}
+  </h2>
+
+  </div>
+<button (click)="clear()" class="clear-result" >clear</button>
   <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
   <div>
     <div *ngFor="let step of steps | async"
-       (click)="gotoDetail(step)" class="search-result" >
+    [class.selected]="step === selectedStep"
+    (click)="onSelect(step)" class="search-result" >
       {{step.name}}  dvd: {{step.dvd}}  {{step.location}}
     </div>
   </div>

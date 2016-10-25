@@ -1,20 +1,29 @@
 /* Master Styles */
 h1 {
-  color: #369; 
-  font-family: Arial, Helvetica, sans-serif;   
+  color: #ff80df;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
+  text-shadow: 1px 1px #000000;
 }
-h2, h3 { 
+.selectedStep{
+  color: #ff80df;
+  text-shadow: 1px 1px #FFFFFF;
+}
+
+
+h2 , h3 {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;   
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
-body { 
-  margin: 2em; 
+body {
+  margin: 2em;
+  background-color: #e6e6e6;
+  
 }
-body, input[text], button { 
-  color: #888; 
-  font-family: Cambria, Georgia; 
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
 }
 a {
   cursor: pointer;
@@ -34,7 +43,7 @@ button:hover {
 }
 button:disabled {
   background-color: #eee;
-  color: #aaa; 
+  color: #aaa;
   cursor: auto;
 }
 
@@ -137,6 +146,6 @@ nav a.router-link-active {
 }
 
 /* everywhere else */
-* { 
-  font-family: Arial, Helvetica, sans-serif; 
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }

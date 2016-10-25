@@ -4,6 +4,7 @@ import { Observable }        from 'rxjs/Observable';
 import { Subject }           from 'rxjs/Subject';
 import { StepSearchService } from './step-search.service';
 import { Step } from './step';
+import {StepsComponent} from './steps.component';
 @Component({
   moduleId: module.id,
   selector: 'step-search',
@@ -13,6 +14,7 @@ import { Step } from './step';
 })
 export class StepSearchComponent implements OnInit {
   steps: Observable<Step[]>;
+  public selectedStep: Step;
   private searchTerms = new Subject<string>();
   constructor(
     private StepSearchService: StepSearchService,
@@ -37,9 +39,20 @@ export class StepSearchComponent implements OnInit {
         return Observable.of<Step[]>([]);
       });
   }
+  onSelect(step: Step): void {
+    this.selectedStep = step;
+  //  this.gotoDetail();
+  }
+  clear(): void{
+document.getElementById('search-box').value="";
+this.search("");
+
+
+  }
   gotoDetail(step: Step): void {
   //  let link = ['/detail', step.name];
   //  this.router.navigate(link);
+  //StepsComponent.selectedStep = step;
 
 
   }

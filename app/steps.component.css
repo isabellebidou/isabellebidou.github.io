@@ -1,30 +1,52 @@
+h1{
+  margin:auto;
+text-align: center;
+  width: 80% ;
+  background-color: #d9d9d9;
+  border-radius: 5%;
+}
+
+.container{
+  width: 100%;
+  position: absolute;
+
+}
+#listdiv{
+  margin:auto;
+
+  width: 80% ;
+}
+
+
 .selected {
-    background-color: #CFD8DC !important;
+    background-color: #ffccf2 !important;
     color: white;
   }
   .steps {
-    margin: 0 0 2em 0;
+    margin: auto;
     list-style-type: none;
     padding: 0;
-    width: 70%;
+    width: 100%;
+
+
     overflow: auto;
   }
   .steps li {
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: #EEE;
+    background-color: #d9d9d9;
     margin: .5em;
     padding: .3em 0;
     height: 2 em;
     border-radius: 4px;
   }
-  .heroes li.selected:hover {
-    background-color: #BBD8DC !important;
+  .steps li.selected:hover {
+    background-color: #ffb3ec !important;
     color: white;
   }
   .steps li:hover {
-    color: #607D8B;
+    color: #ff80df;
     background-color: #DDD;
     left: .1em;
   }
@@ -37,7 +59,7 @@
     font-size: small;
     color: white;
     padding: 0.8em 0.7em 0 0.7em;
-    background-color: #607D8B;
+    background-color: #ff80df;
     line-height: 1em;
     position: relative;
     left: -1px;

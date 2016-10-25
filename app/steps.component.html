@@ -1,10 +1,16 @@
 
-<div *ngIf="selectedStep">
-<h2>
-  {{selectedStep.name | uppercase}} dvd:{{selectedStep.dvd| uppercase}} {{selectedStep.location| uppercase}}
-</h2>
 
-</div>
+<div id="listdiv">
+
+
+  <p>or select the step in the list below</p>
+
+  <div *ngIf="selectedStep">
+  <h2 class="selectedStep">
+    {{selectedStep.name }} dvd:{{selectedStep.dvd}} {{selectedStep.location}}
+  </h2>
+
+  </div >
 
   <ul class="steps">
     <li *ngFor="let step of steps"
@@ -15,3 +21,5 @@
 
     </li>
   </ul>
+
+</div>
