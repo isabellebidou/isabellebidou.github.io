@@ -3,12 +3,13 @@
   border-left: 1px solid gray;
   border-right: 1px solid gray;
   width:80%;
-  height: 20px;
+  height: 30px;
   padding: 5px;
   background-color: white;
   cursor: pointer;
+  vertical-align: text-bottom;
   margin:auto;
-
+overflow: auto;
   width: 100% ;
 }
 
@@ -23,7 +24,7 @@
 .clear-result{
   width:18%;
     height: 20px;
-    
+
 }
 #search-box{
 width:78%;

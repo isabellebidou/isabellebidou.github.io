@@ -44,7 +44,7 @@ export class StepSearchComponent implements OnInit {
   //  this.gotoDetail();
   }
   clear(): void{
-document.getElementById('search-box').value="";
+document.getElementById('search-box').innerHTML="";
 this.search("");
 
 
