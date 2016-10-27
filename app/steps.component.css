@@ -5,6 +5,13 @@ text-align: center;
   background-color: #d9d9d9;
   border-radius: 5%;
 }
+nav{margin:auto;
+text-align: center;
+width: 80% ;
+}
+.tab{
+  width: 40% ;
+}
 
 .container{
   width: 100%;

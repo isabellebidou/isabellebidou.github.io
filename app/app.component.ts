@@ -5,9 +5,13 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-<my-step-detail></my-step-detail>
-<step-search></step-search>
-<my-steps></my-steps>
+
+
+    <nav>
+     <a routerLink="/search" class="tab">search by name</a>
+     <a routerLink="/list" class="tab">show full list</a>
+   </nav>
+<router-outlet></router-outlet>
 
 
 

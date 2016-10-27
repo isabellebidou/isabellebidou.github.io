@@ -11,7 +11,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent }         from './app.component';
 
-import { StepDetailComponent }  from './step-detail.component';
+
 import { StepsComponent }      from './steps.component';
 import { StepService }          from './step.service';
 import { StepSearchComponent}   from './step-search.component';
@@ -28,7 +28,7 @@ import { AppRoutingModule }     from './app-routing.module';
   ],
   declarations: [
     AppComponent,
-    StepDetailComponent,
+
     StepsComponent,
     StepSearchComponent
   ],

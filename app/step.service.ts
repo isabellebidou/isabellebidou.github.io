@@ -19,6 +19,7 @@ export class StepService {
     return this.http.get(this.stepsUrl)
                .toPromise()
                .then(response => response.json().data as Step[])
+               
                .catch(this.handleError);
   }
 

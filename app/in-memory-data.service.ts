@@ -3,9 +3,6 @@ export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     let steps = [
 
-
-
-
       {
       "name": "posture",
       "dvd": "1",

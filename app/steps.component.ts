@@ -20,6 +20,7 @@ export class StepsComponent implements OnInit {
 
   getSteps(): void {
     this.stepService.getSteps().then(steps => this.steps = steps);
+    
   }
 
   ngOnInit(): void {

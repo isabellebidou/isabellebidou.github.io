@@ -8,6 +8,7 @@ export class StepSearchService {
   search(term: string): Observable<Step[]> {
     return this.http
                .get(`app/steps/?name=${term}`)
+
                .map((r: Response) => r.json().data as Step[]);
   }
 }
