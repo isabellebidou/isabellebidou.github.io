@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent }      from './app.component';
 import { StepSearchComponent }      from './step-search.component';
 import { StepsComponent }      from './steps.component';
-import { StepDetailComponent }  from './step-detail.component';
+
 const routes: Routes = [
 //{ path: '', redirectTo: './', pathMatch: 'full' },
 { path: '', component: StepSearchComponent },

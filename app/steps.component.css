@@ -12,6 +12,9 @@ width: 80% ;
 .tab{
   width: 40% ;
 }
+.tab.on{
+  color: #ff80df;
+}
 
 .container{
   width: 100%;

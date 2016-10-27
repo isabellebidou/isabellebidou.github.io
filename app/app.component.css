@@ -1,20 +1,38 @@
-h1 {
-  font-size: 1.2em;
-  color: #999;
-  margin-bottom: 0;
+h1{
+  margin:auto;
+text-align: center;
+  width: 80% ;
+  background-color: #d9d9d9;
+  border-radius: 5%;
 }
+nav{margin:auto;
+text-align: center;
+width: 80% ;
+}
+
+
+
+
+
 h2 {
   font-size: 2em;
   margin-top: 0;
   padding-top: 0;
 }
-nav a {
-  padding: 5px 10px;
+.tab {
+  padding: 2px;
+  width: 45% ;
+  height:30px;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
+  background-color: #d9d9d9;
   border-radius: 4px;
+}
+.tab:hover{
+
+  text-shadow: 1px 1px #FFFFFF;
+  background-color: #CFD8DC
 }
 nav a:visited, a:link {
   color: #607D8B;

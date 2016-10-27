@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+////http://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/
 @Component({
   moduleId: module.id,
   selector: 'my-app',
@@ -8,16 +8,42 @@ import { Component } from '@angular/core';
 
 
     <nav>
-     <a routerLink="/search" class="tab">search by name</a>
-     <a routerLink="/list" class="tab">show full list</a>
+     <div routerLink="/search" class="tab" [style.color]="getSearchStyle()"(click)="showSearchStyle = true;showListStyle = false;">search by name</div>
+     <div routerLink="/list" class="tab" [style.color]="getListStyle()" (click)="showListStyle = true;showSearchStyle = false;">show full list</div>
    </nav>
 <router-outlet></router-outlet>
 
 
 
   `,
-  styleUrls: ['steps.component.css'],
+  styleUrls: ['app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'which DVD?';
+  showListStyle: false;
+  showSearchStyle: true;
+    //public selectedElement: HTMLDivElement;
+
+    ngOnInit(): void{
+      this.showListStyle= false;
+      this.showSearchStyle= true;
+      this.getSearchStyle();
+    }
+
+    getSearchStyle() {
+      if(this.showSearchStyle){
+        return "#ff80df";
+      } else {
+        return "";
+      }
+    }
+    getListStyle() {
+      if(this.showListStyle){
+        return "#ff80df";
+      } else {
+        return "";
+      }
+    }
+
+
 }
