@@ -12,6 +12,9 @@ import { Component, OnInit } from '@angular/core';
      <div routerLink="/list" class="tab" [style.color]="getListStyle()" (click)="showListStyle = true;showSearchStyle = false;">show full list</div>
    </nav>
 <router-outlet></router-outlet>
+<div id = "disclaimer">
+The information contained in this website is for general information purposes only. The information is provided by Isabelle Bidou and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+</div>
 
 
 

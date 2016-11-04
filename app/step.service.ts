@@ -1,6 +1,6 @@
 import { Step } from './step';
 
-import { Headers, Http } from '@angular/http';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 import { Injectable } from '@angular/core';
@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 export class StepService {
 
 
-//  private stepsUrl = 'https://api.myjson.com/bins/sn84';  // URL to web api
+//  private stepsUrl = 'http://api.myjson.com/bins/sn84';  // URL to web api
  private stepsUrl = 'app/steps';
   private headers = new Headers({'Content-Type': 'application/json'});
 
@@ -19,7 +19,7 @@ export class StepService {
     return this.http.get(this.stepsUrl)
                .toPromise()
                .then(response => response.json().data as Step[])
-               
+
                .catch(this.handleError);
   }
 

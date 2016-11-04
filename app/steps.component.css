@@ -1,20 +1,3 @@
-h1{
-  margin:auto;
-text-align: center;
-  width: 80% ;
-  background-color: #d9d9d9;
-  border-radius: 5%;
-}
-nav{margin:auto;
-text-align: center;
-width: 80% ;
-}
-.tab{
-  width: 40% ;
-}
-.tab.on{
-  color: #ff80df;
-}
 
 .container{
   width: 100%;
