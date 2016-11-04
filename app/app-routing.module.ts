@@ -7,7 +7,7 @@ import { StepsComponent }      from './steps.component';
 
 const routes: Routes = [
 //{ path: '', redirectTo: './', pathMatch: 'full' },
-{ path: '', component: StepsComponent },
+{ path: '', component: StepSearchComponent },
 { path: 'search', component: StepSearchComponent },
 { path: 'list', component: StepsComponent }
 
